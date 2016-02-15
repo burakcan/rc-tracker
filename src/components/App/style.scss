@@ -1,0 +1,72 @@
+@import "settings";
+
+html {
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: normal;
+  font-family: 'Open Sans', sans-serif;
+  color: $c-app-text;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, input, textarea, select, button {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  hyphens: auto;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: default;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+img {
+  vertical-align: middle;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre, fieldset, ul, ol, menu {
+  margin: 0;
+}
+
+button, fieldset, iframe {
+  border: 0;
+}
+
+fieldset, nav ul, nav ol, button, menu {
+  padding: 0;
+}
+
+nav ol, nav ul {
+  list-style: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#root {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('../../images/bg.jpg') #8B479C no-repeat center center;
+  background-size: cover;
+}

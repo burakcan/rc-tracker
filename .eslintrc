@@ -1,0 +1,11 @@
+{
+  "extends": "airbnb",
+  "ecmaFeatures": {
+    "generators": true,
+    "experimentalObjectRestSpread": true,
+  },
+  "rules": {
+    "generator-star-spacing": 2,
+    "react/prop-types": [2, { "ignore": ["className", "children", "dispatch"] }],
+  }
+}

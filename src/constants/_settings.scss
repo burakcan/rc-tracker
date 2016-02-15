@@ -1,0 +1,26 @@
+$c-black: #444;
+$c-white: #fff;
+$c-light-gray: #f2f2f2;
+$c-blue: #2C82C9;
+
+$c-app-text: $c-black;
+
+$c-sidebar-bg: $c-black;
+$c-sidebar-item-text: $c-white;
+$c-sidebar-item-hover: lighten($c-sidebar-bg, 5%);
+$c-sidebar-item-active: darken($c-sidebar-bg, 5%);
+$c-sidebar-item-active-text: $c-white;
+
+$c-sidebar-secondary-bg: lighten($c-black, 20%);
+$c-sidebar-secondary-item-text: lighten($c-sidebar-secondary-bg, 40%);
+$c-sidebar-secondary-item-hover: lighten($c-sidebar-secondary-bg, 3%);
+$c-sidebar-secondary-item-active: darken($c-sidebar-secondary-bg, 10%);
+$c-sidebar-secondary-item-active-text: lighten($c-sidebar-secondary-bg, 40%);
+
+$c-button-bg: $c-black;
+$c-button-text: $c-white;
+$c-button-hover: lighten($c-sidebar-bg, 5%);
+
+$c-button-secondary-bg: lighten($c-black, 20%);
+$c-button-secondary-text: lighten($c-button-secondary-bg, 40%);
+$c-button-secondary-hover: lighten($c-button-secondary-bg, 3%);

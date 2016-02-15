@@ -1,0 +1,80 @@
+@import "settings";
+
+:local(.Wrapper) {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 15px;
+}
+
+:local(.Box) {
+  position: relative;
+  background: $c-white;
+  box-shadow: 0 1px 2px rgba($c-black, 0.3);
+  width: calc(100% / 2 - 23px);
+  height: calc(100vh / 2 - 23px);
+  min-height: 254px;
+  margin: 15px 0 0 15px;
+  float: left;
+}
+
+:local(.Weather) {
+  .Current {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35%;
+    height: 50%;
+    background: $c-black;
+    text-align: center;
+  }
+
+  .CurrentDetails {
+    top: 50%;
+    background: lighten($c-black, 3%);
+    text-align: left;
+    white-space: nowrap;
+    line-height: 24px;
+  }
+
+  .Current .InnerWrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: $c-white;
+  }
+
+  .Current .city,
+  .Current .temp{
+    font-size: 16px;
+  }
+
+  .Current .icon {
+    font-size: 50px;
+    margin: 5px 0 10px;
+  }
+
+  .Forecast {
+    position: absolute;
+    left: 35%;
+    top: 0;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column
+  }
+
+  .Forecast-Item {
+    flex: 1;
+
+    $last: darken($c-white, 15%);
+
+    @for $i from 0 to 5 {
+      &:nth-child(#{$i + 1}) {
+        $last: lighten($last,  3%);
+        background: $last;
+      }
+    }
+  }
+}

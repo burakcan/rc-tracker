@@ -1,0 +1,76 @@
+@import "settings";
+
+:local(.Wrapper) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $c-sidebar-bg;
+  display: flex;
+  flex-direction: column;
+}
+
+:local(.Nav) {
+  flex-grow: 1;
+}
+
+:local(.Item) {
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  white-space: nowrap;
+  padding: 0 15px;
+  color: $c-sidebar-item-text;
+
+  &:hover {
+    background: $c-sidebar-item-hover;
+  }
+
+  &.active {
+    background: $c-sidebar-item-active;
+    color: $c-sidebar-item-active-text;
+  }
+
+  .Icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: currentColor;
+    font-size: 18px;
+    margin-top: -4px;
+
+    &:before {
+      vertical-align: middle;
+    }
+  }
+
+  .Title {
+    display: inline-block;
+    vertical-align: middle;
+    color: currentColor;
+    font-weight: 600;
+    padding: 0 0 0 7px;
+  }
+
+  .Icon ~ .Title {
+    padding-left: 15px;
+  }
+}
+
+:local(.Wrapper).secondary {
+  background: $c-sidebar-secondary-bg;
+
+  :local(.Item) {
+    color: $c-sidebar-secondary-item-text;
+
+    &:hover {
+      background: $c-sidebar-secondary-item-hover;
+    }
+
+    &.active {
+      background: $c-sidebar-secondary-item-active;
+      color: $c-sidebar-secondary-item-active-text;
+    }
+  }
+}
