@@ -16,6 +16,10 @@
   min-height: 254px;
   margin: 15px 0 0 15px;
   float: left;
+
+  &.full {
+    width: calc(100% - 30px);
+  }
 }
 
 :local(.Weather) {
@@ -23,7 +27,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 35%;
+    width: 25%;
     height: 50%;
     background: $c-black;
     text-align: center;
@@ -57,9 +61,9 @@
 
   .Forecast {
     position: absolute;
-    left: 35%;
+    left: 25%;
     top: 0;
-    width: 65%;
+    width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column

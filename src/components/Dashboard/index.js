@@ -5,8 +5,7 @@ import styles from './style';
 export default function Dashboard(props) {
   return (
     <div className={ styles.Wrapper }>
-      <Weather { ...props.weather } className={ styles.Box } />
-      <div className={ styles.Box } />
+      <Weather { ...props.weather } className={ `${styles.Box} full` } />
       <div className={ styles.Box } />
       <div className={ styles.Box } />
     </div>

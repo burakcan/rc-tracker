@@ -13,7 +13,7 @@ export default function EntityFlow(props) {
       <Pane size="1">
         { cloneElement(props.children, {
           type: props.type,
-          category: props.category
+          category: props.category,
         }) }
       </Pane>
     </Pane>
@@ -22,4 +22,6 @@ export default function EntityFlow(props) {
 
 EntityFlow.propTypes = {
   type: PropTypes.string,
+  category: PropTypes.string,
+  secondarySidebarItems: PropTypes.array,
 };

@@ -15,11 +15,11 @@ export default function (props) {
             isIndex: true,
           }, {
             title: 'INVENTORY',
-            to: '/entities/inventory/all',
+            to: '/entities/inventory',
             icon: 'inventory',
           }, {
             title: 'LOGS',
-            to: '/entities/logs/all',
+            to: '/entities/logs',
             icon: 'logs',
           }, {
             title: 'SETTINGS',
